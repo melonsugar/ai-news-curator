@@ -1,5 +1,6 @@
 name: Daily News Curator
 on:
+  push: 
   schedule:
     - cron: '0 13 * * *'
   workflow_dispatch:
