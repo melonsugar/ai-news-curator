@@ -29,8 +29,6 @@ def save_to_notion(title, summary, link):
 # Inside your loop, just add:
 # save_to_notion(title, summary, link)
 from types import new_class
-!pip install feedparser;
-!pip install anthropic;
 # ============================================================
 # AI News RSS Feed Fetcher — with AI-generated summaries
 # Paste this into a Google Colab cell and run it.
