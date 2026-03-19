@@ -40,7 +40,6 @@ from types import new_class
 import feedparser
 import anthropic
 from datetime import datetime
-from IPython.display import HTML, display
 
 # --- 2. Your Anthropic API key ---
 # Get yours at https://console.anthropic.com/
@@ -200,8 +199,6 @@ def build_html(feeds_dict, client):
 client = anthropic.Anthropic(api_key=ANTHROPIC_API_KEY)
 print("Fetching feeds and generating summaries...\n")
 html_output = build_html(FEEDS, client)
-
-display(HTML(html_output))
 
 # Optional: save to file
 with open("ai_news_digest.html", "w") as f:
